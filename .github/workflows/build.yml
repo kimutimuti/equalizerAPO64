@@ -85,7 +85,7 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         workflow: c-cpp.yml
-        repo: TheFireKahuna/amd-fftw
+        repo: kimutimuti/amd-fftw
         name: ${{ matrix.fftw_artifact }}
         path: ${{ github.workspace }}\deps\fftw
         check_artifacts: true
@@ -99,7 +99,7 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         workflow: c-cpp.yml
-        repo: TheFireKahuna/muparserx
+        repo: kimutimuti/muparserx
         name: ${{ matrix.muparserx_artifact }}
         path: ${{ github.workspace }}\deps\muparserx
         check_artifacts: true
@@ -113,7 +113,7 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         workflow: action.yml
-        repo: TheFireKahuna/libsndfile
+        repo: kimutimuti/libsndfile
         name: ${{ matrix.libsndfile_artifact }}
         path: ${{ github.workspace }}\deps\libsndfile
         check_artifacts: true
@@ -125,7 +125,7 @@ jobs:
     - name: Download TCLAP
       uses: actions/checkout@v4
       with:
-        repository: TheFireKahuna/tclap
+        repository: kimutimuti/tclap
         token: ${{ secrets.GITHUB_TOKEN }}
         path: deps/tclap
 
