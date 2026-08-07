@@ -35,8 +35,8 @@ jobs:
             platform: x64
             simd_variant: avx2
             arch_flag: AdvancedVectorExtensions2
-            fftw_artifact: fftw-windows-release-x64-avx2
-            muparserx_artifact: muparserx-msvc-release-x64-avx2
+            fftw_artifact: fftw-windows-Release-x64-avx2
+            muparserx_artifact: muparserx-msvc-Release-x64-avx2
             libsndfile_artifact: libsndfile-x64-avx2
             msvcdevplatform: x64
           - name: windows-x64-avx512
@@ -44,8 +44,8 @@ jobs:
             platform: x64
             simd_variant: avx512
             arch_flag: AdvancedVectorExtensions512
-            fftw_artifact: fftw-windows-release-x64-avx512
-            muparserx_artifact: muparserx-msvc-release-x64-avx512
+            fftw_artifact: fftw-windows-Release-x64-avx512
+            muparserx_artifact: muparserx-msvc-Release-x64-avx512
             libsndfile_artifact: libsndfile-x64-avx512
             msvcdevplatform: x64
           - name: windows-x64-avx10_1
@@ -53,16 +53,16 @@ jobs:
             platform: x64
             simd_variant: avx10_1
             arch_flag: AdvancedVectorExtensions101
-            fftw_artifact: fftw-windows-release-x64-avx10
-            muparserx_artifact: muparserx-msvc-release-x64-avx10
+            fftw_artifact: fftw-windows-Release-x64-avx10
+            muparserx_artifact: muparserx-msvc-Release-x64-avx10
             libsndfile_artifact: libsndfile-x64-avx10
             msvcdevplatform: x64
           - name: windows-arm64
             os: windows-11-arm
             platform: ARM64
             simd_variant: neon
-            fftw_artifact: fftw-windows-release-arm64
-            muparserx_artifact: muparserx-msvc-release-ARM64
+            fftw_artifact: fftw-windows-Release-arm64
+            muparserx_artifact: muparserx-msvc-Release-ARM64
             libsndfile_artifact: libsndfile-arm64
             msvcdevplatform: x86_arm64 
 
