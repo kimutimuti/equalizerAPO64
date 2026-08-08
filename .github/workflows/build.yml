@@ -31,7 +31,7 @@ jobs:
         ]
         include:
           - name: windows-x64-avx2
-            os: windows-2025
+            os: windows-2022
             platform: x64
             simd_variant: avx2
             arch_flag: AdvancedVectorExtensions2
@@ -40,7 +40,7 @@ jobs:
             libsndfile_artifact: libsndfile-x64-avx2
             msvcdevplatform: x64
           - name: windows-x64-avx512
-            os: windows-2025
+            os: windows-2022
             platform: x64
             simd_variant: avx512
             arch_flag: AdvancedVectorExtensions512
@@ -49,7 +49,7 @@ jobs:
             libsndfile_artifact: libsndfile-x64-avx512
             msvcdevplatform: x64
           - name: windows-x64-avx10_1
-            os: windows-2025
+            os: windows-2022
             platform: x64
             simd_variant: avx10_1
             arch_flag: AdvancedVectorExtensions101
