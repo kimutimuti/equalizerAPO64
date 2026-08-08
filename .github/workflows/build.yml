@@ -276,6 +276,7 @@ jobs:
           "/p:MUPARSERX_LIB=$env:MUPARSERX_LIB",
           "/p:TCLAP_ROOT=$env:TCLAP_ROOT",
           "/p:PlatformToolset=v143"  # Override to VS 2022 toolset for CI (project uses v145/VS 2026)
+          "/p:SpectreMitigation=false"
         )
 
         $BuildPlatform = "${{ matrix.platform }}"
